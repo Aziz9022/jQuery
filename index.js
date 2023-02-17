@@ -31,7 +31,7 @@ $(document).ready(function () {
    });
 
    $("#btn7").click(function (e) {
-      $("h1").slideToggle();;
+      $("h1").slideToggle();
    });
 
    // Animate Function -> animate({params} , speed , callback)
@@ -45,5 +45,10 @@ $(document).ready(function () {
    });
 
 
+   $("#btn9").click(function (e) {
+      var x = $("#inp1").val();
+      // console.log("value is " + x);
+      $("h1").text("value is " + x);
+   });
 
 });
