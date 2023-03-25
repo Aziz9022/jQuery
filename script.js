@@ -13,16 +13,16 @@ jQuery('#myForm').validate({
             required: true,
             number: true,
         },
-        foodDescription:{
-            required:true,
-            minlength:10
+        foodDescription: {
+            required: true,
+            minlength: 10
         },
-        foodRating:{
-            required:true,
-            maxlength:1,
-            number:true
+        foodRating: {
+            required: true,
+            maxlength: 1,
+            number: true
         }
-        
+
     }, messages: {
         foodName: {
             required: "Please enter food Name",
@@ -37,7 +37,56 @@ jQuery('#myForm').validate({
             required: "Please enter food quantity",
             number: "Please enter food quantity in numbers",
         }
-    },submitHandler:function(form){
+    }, submitHandler: function (form) {
         form.submit();
     }
+});
+
+//Login Form Validation
+
+jQuery("#loginform").validate({
+    rules:{
+        uemail:{
+            required:true,
+            email:true
+        },
+        upassword:{
+            required:true,
+            minlength:8
+        }
+    },
+    messages:{
+
+    },
+    submitHandler:function(form){
+        form.submit();
+    }
+});
+
+// Load Login Page
+
+$(document).ready(function () {
+
+    $("#homebtn").click(function () {
+        $("#addfood").fadeOut();
+        $("#login").fadeOut();
+        $("#main-page").fadeIn();
+    });
+
+    $("#foodbtn").click(function () {
+        $("#login").fadeOut();
+        $("#main-page").fadeOut();
+
+        $("#addfood").load('foodform.html');
+        $("#addfood").fadeIn();
+
+    });
+
+    $("#loginbtn").click(function () {
+        $("#addfood").fadeOut();
+        $("#main-page").fadeOut();
+
+        $("#login").load('login.html');
+        $("#login").fadeIn();
+    });
 });

@@ -22,81 +22,46 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                        <a class="nav-link  text-light" aria-current="page" id="homebtn" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Add Food</a>
+                        <a class="nav-link text-light" href="#" id="foodbtn">Add Food</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Login</a>
+                        <a class="nav-link text-light" href="#" id="loginbtn">Login</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container-sm">
-        <div class="container-sm mt-5">
-            <form id="myForm" action="" method="get">
-                <div class="mb-3">
-                    <label for="fname" class="form-label">Enter Food Name</label>
-                    <input type="text" class="form-control" id="fname" aria-describedby="fname-help" name="foodName">
-                </div>
-                <div class="mb-3">
-                    <label for="flexRadioDefault1" class="form-label">Select Food Type</label><br>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="foodType" value="Veg" id="flexRadioDefault1"
-                            checked>
-                        <label class="form-check-label" for="flexRadioDefault1">
-                            Veg
-                        </label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="foodType" value="Non-Veg"
-                            id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                            Non-Veg
-                        </label>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="foodPrice" class="form-label">Enter Food Price</label>
-                    <input type="text" class="form-control" id="foodPrice" aria-describedby="foodPrice-help"
-                        name="foodPrice">
-                </div>
-                <div class="mb-3">
-                    <label for="foodQuantity" class="form-label">Enter Food Quantity</label>
-                    <input type="text" class="form-control" id="foodQuantity" aria-describedby="foodQuantity-help"
-                        name="foodQuantity">
-                </div>
-                <div class="mb-3">
-                    <label for="foodCategory">Select Food Category</label>
-                    <select class="form-select" aria-label="Default select example" name="foodCategory">
-                        <option value="Breakfast">Breakfast</option>
-                        <option value="Lunch">Lunch</option>
-                        <option value="Main Course">Main Course</option>
-                        <option value="Desert">Desert</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <div class="form">
-                        <label for="floatingTextarea2">Enter Food Description</label>
-                        <textarea class="form-control" id="floatingTextarea2" style="height: 100px"
-                            name="foodDescription"></textarea>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="foodRating" class="form-label">Enter Food Rating</label>
-                    <input type="text" class="form-control" id="foodRating" aria-describedby="foodRating-help"
-                        name="foodRating">
-                </div>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <input class="btn btn-danger" type="reset" value="clear">
-                    <input class="btn btn-success" type="submit" value="submit">
-                </div>
-            </form>
-        </div>
+    <div class="container" id="main-page">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://source.unsplash.com/800x400" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://source.unsplash.com/1000x500" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://source.unsplash.com/900x400" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </div>
+    <div class="container" id="addfood"></div>
+    <div class="container" id="login"></div>
+    
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <div class="container-sm">
+        <div class="container-sm mt-5">
+            <form id="myForm" action="" method="post">
+                <div class="mb-3">
+                    <label for="fname" class="form-label">Enter Food Name</label>
+                    <input type="text" class="form-control" id="fname" aria-describedby="fname-help" name="foodName">
+                </div>
+                <div class="mb-3">
+                    <label for="flexRadioDefault1" class="form-label">Select Food Type</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="foodType" value="Veg" id="flexRadioDefault1"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Veg
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="foodType" value="Non-Veg"
+                            id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Non-Veg
+                        </label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="foodPrice" class="form-label">Enter Food Price</label>
+                    <input type="text" class="form-control" id="foodPrice" aria-describedby="foodPrice-help"
+                        name="foodPrice">
+                </div>
+                <div class="mb-3">
+                    <label for="foodQuantity" class="form-label">Enter Food Quantity</label>
+                    <input type="text" class="form-control" id="foodQuantity" aria-describedby="foodQuantity-help"
+                        name="foodQuantity">
+                </div>
+                <div class="mb-3">
+                    <label for="foodCategory">Select Food Category</label>
+                    <select class="form-select" aria-label="Default select example" name="foodCategory">
+                        <option value="Breakfast">Breakfast</option>
+                        <option value="Lunch">Lunch</option>
+                        <option value="Main Course">Main Course</option>
+                        <option value="Desert">Desert</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <div class="form">
+                        <label for="floatingTextarea2">Enter Food Description</label>
+                        <textarea class="form-control" id="floatingTextarea2" style="height: 100px"
+                            name="foodDescription"></textarea>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="foodRating" class="form-label">Enter Food Rating</label>
+                    <input type="text" class="form-control" id="foodRating" aria-describedby="foodRating-help"
+                        name="foodRating">
+                </div>
+                <div class="mb-4">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <input class="btn btn-danger" type="reset" value="clear">
+                        <input class="btn btn-success" type="submit" value="submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
