@@ -37,5 +37,7 @@ jQuery('#myForm').validate({
             required: "Please enter food quantity",
             number: "Please enter food quantity in numbers",
         }
+    },submitHandler:function(form){
+        form.submit();
     }
 });
